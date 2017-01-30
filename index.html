@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and widgets</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="main-converter">
+        <ul class="currency-list">
+            <li class="clearfix">
+                <h2 class="currency usd">usd</h2>
+
+                <div class="sum">
+                    <form class="input-sum" action="">
+                        <div>
+                            <label class="inputed" for="usd">$</label>
+                            <input class="currency-input  inputed" type="text" id="usd" placeholder="356.3">
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <li class="clearfix">
+                <h2 class="currency gbp">gbp</h2>
+
+                <div class="sum">
+                    <form class="input-sum" action="">
+                        <div>
+                            <label for="gbp">£</label>
+                            <input class="currency-input" type="text" id="gbp" placeholder="156.3">
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer converter">
+        <a href="#" class="button schedule"></a>
+        <a href="#" class="button add"></a>
+        <a href="#" class="button widget"></a>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="calendar">
+        <div class="header-calendar">
+            <a href="#" class="button left"></a>
+
+            <div class="date">
+                <span class="date-year">2012</span>
+                <span class="date-month">JULY</span>
+            </div>
+            <a href="#" class="button right"></a>
+
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <td>S</td>
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>F</td>
+                <td>S</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="data__month">1</span></td>
+                <td><span class="data__month">2</span></td>
+                <td><span class="data__month">3</span></td>
+                <td><span class="data__month">4</span></td>
+                <td><span class="data__month">5</span></td>
+                <td><span class="data__month active">6</span></td>
+                <td><span class="data__month">7</span></td>
+            </tr>
+            <tr>
+                <td><span class="data__month">8</span></td>
+                <td><span class="data__month">9</span></td>
+                <td><span class="data__month">10</span></td>
+                <td><span class="data__month">11</span></td>
+                <td><span class="data__month">12</span></td>
+                <td><span class="data__month">13</span></td>
+                <td><span class="data__month">14</span></td>
+            </tr>
+            <tr>
+                <td><span class="data__month">15</span></td>
+                <td><span class="data__month">16</span></td>
+                <td><span class="data__month">17</span></td>
+                <td><span class="data__month">18</span></td>
+                <td><span class="data__month">19</span></td>
+                <td><span class="data__month">20</span></td>
+                <td><span class="data__month">21</span></td>
+            </tr>
+            <tr>
+                <td><span class="data__month">22</span></td>
+                <td><span class="data__month">23</span></td>
+                <td><span class="data__month">24</span></td>
+                <td><span class="data__month">25</span></td>
+                <td><span class="data__month">26</span></td>
+                <td><span class="data__month">27</span></td>
+                <td><span class="data__month">28</span></td>
+            </tr>
+            <tr>
+                <td><span class="data__month">29</span></td>
+                <td><span class="data__month">30</span></td>
+                <td><span class="data__month">31</span></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="wrapper">
+    <form class="login" action="">
+        <div>
+            <div class="login-icon-input active icon-email">
+                <input class="login-input user-email" id="login-user-email" type="text"
+                       placeholder="Email Address...">
+            </div>
+            <div class="login-icon-input icon-possword">
+                <input class="login-input user-possword" id="login-user-possword" type="text" placeholder="Password...">
+            </div>
+        </div>
+        <div class="sign-buttons">
+            <a href="#" class="sign-up">SIGN up</a>
+            <a href="#" class="sign-in">SIGN IN</a>
+        </div>
+    </form>
+</div>
+
+
+<div class="wrapper">
+    <div class="buttons clearfix">
+        <div class="validate">
+
+            <input class="input-validate valid" type="text" placeholder="Valid input">
+            <input class="range" type="range">
+            <input class="input-validate invalid" type="text" placeholder="Invalid input">
+        </div>
+        <div class="checks">
+            <div class="squared">
+                <input type="checkbox" value="None" id="squared" name="check" checked/>
+                <label for="squared"></label>
+            </div>
+            <div class="rounded">
+                <input type="checkbox" value="None" id="roundedNoChecked" name="check"/>
+                <label for="roundedNoChecked"></label>
+            </div>
+            <div class="rounded">
+                <input type="checkbox" value="None" id="rounded" name="check" checked/>
+                <label for="rounded"></label>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="mail">
+        <div class="header-mail clearfix">
+            <a href="#" class="button menu"></a>
+            <a href="#" class="button add-user"></a>
+        </div>
+        <ul class="main-mail">
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user1.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Yaroslav Lozhkin </h4>
+
+                    <p class="message">Alright got it!</p>
+                </div>
+                <div class="status green"></div>
+            </li>
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user2.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Michael Zenaty </h4>
+
+                    <p class="message sent">Sent</p>
+                </div>
+                <div class="status red"></div>
+            </li>
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user3.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Wells Riley</h4>
+
+                    <p class="message typing">Typing...</p>
+                </div>
+                <div class="status"></div>
+            </li>
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user4.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Matt Vickers </h4>
+
+                    <p class="message not-delivered">Not delivered</p>
+                </div>
+                <div class="status"></div>
+            </li>
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user5.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Divya Manian</h4>
+
+                    <p class="message">You can download it on git...</p>
+                </div>
+                <div class="status sky"></div>
+            </li>
+            <li class="clearfix">
+                <a class="user-img" href="#"><img src="img/users/user6.jpg" alt="user"></a>
+
+                <div class="chat">
+                    <h4 class="user-name">Vin Thomas </h4>
+
+                    <p class="message">Thank you!</p>
+                </div>
+                <div class="status"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="weather">
+        <div class="image-weather">
+            <div class="window">
+                <div class="image_reel">
+                    <a class="clearfix" href="#">
+                        <img src="img/slader/greace.jpg" alt=""/>
+
+                        <div class="weather-info">
+                            <p class="temperature">73</p>
+
+                            <p class="location">Zagora, Greece </p>
+
+                            <p class="time">8:34 am</p>
+                        </div>
+                    </a>
+                    <a class="clearfix" href="#"><img src="img/slader/venec.jpg" alt=""/>
+
+                        <div class="weather-info">
+                            <p class="temperature">55</p>
+
+                            <p class="location">Vene, Greece </p>
+
+                            <p class="time">8:55 am</p>
+                        </div>
+                    </a>
+
+                    <a class="clearfix" href="#"><img src="img/slader/rom.jpg" alt=""/>
+
+                        <div class="weather-info">
+                            <p class="temperature">55</p>
+
+                            <p class="location">Vene, Greece </p>
+
+                            <p class="time">8:55 am</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="paging">
+                    <a class="active" href="#" ></a>
+                    <a href="#"></a>
+                    <a href="#></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer weather">
+            <a href="#" class="button fahrenheit"></a>
+            <a href="#" class="button celsius"></a>
+            <a href="#" class="button add-weather"></a>
+            <a href="#" class="button weather-list"></a>
+        </div>
+
+    </div>
+</div>
+
+<div class="wrapper horizontal">
+    <div class="music clearfix" >
+        <div class="music-albom">
+            <a href="#"><img src="img/music/albom.jpg" alt="albom"></a>
+            <a class="button follow" href="#">FOLLOW</a>
+        </div>
+        <div class="play-track">
+            <h3 class="singer">Faded Paper Figures</h3>
+            <h4 class="song">Invent it all again</h4>
+            <div class="ranger clearfix">
+                <div class="length-track" style="width: 487px">
+                    <div class="loading-track" style="width: 388px">
+                        <div class="playing-track" style="width: 299px"></div>
+                    </div>
+                </div>
+                <p class="time">-1:57</p>
+            </div>
+            <div class="control">
+                <a href="#" class="button play"></a>
+                <a href="#" class="button previous"></a>
+                <a href="#" class="button next"></a>
+                <a href="#" class="button shuffle"></a>
+                <a href="#" class="button repeat"></a>
+                <a href="#" class="button heart"></a>
+                <a href="#" class="button add"></a>
+                <a href="#" class="button share"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1083 @@
+@font-face {
+    font-family: Gotham Rounded Medium;
+    src: url(../fonts/gotham_rounded/GothamRoundedMedium_21022.ttf);
+}
+
+@font-face {
+    font-family: Gotham Rounded Light;
+    src: url(../fonts/gotham_rounded/GothamRoundedLight_21020.ttf);
+}
+
+@font-face {
+    font-family: Gotham Rounded Book;
+    src: url(../fonts/gotham_rounded/GothamRoundedBook_21018.ttf);
+}
+
+@font-face {
+    font-family: Gotham Rounded Bold;
+    src: url(../fonts/gotham_rounded/GothamRoundedBold_21016.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #efefef;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.footer {
+    height: 64px;
+    font-size: 0;
+}
+
+.wrapper input {
+    font-family: Gotham Rounded Book;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    width: 307px;
+    margin: 50px auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-converter {
+    margin-bottom: 64px;
+    background: white;
+}
+
+.currency-list li {
+    height: 109px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.currency-list li:first-child {
+    height: 117px;
+    border-top: none;
+}
+
+.currency {
+    color: #b2b2b2;
+    font-size: 18.11px;
+    font-family: Gotham Rounded Medium;
+    text-transform: uppercase;
+    float: left;
+    width: 101px;
+    text-align: center;
+    line-height: 108px;
+    margin: 0;
+}
+
+.sum {
+    float: right;
+    width: 206px;
+
+}
+
+.sum:before {
+    content: "";
+    border-left: 1px solid #d7d7d7;
+    font-size: 49px;
+
+}
+
+.input-sum {
+    font-size: 0;
+    display: inline-block;
+    width: 205px;
+}
+
+.input-sum div {
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+.currency-input {
+    height: 40.75px;
+    border: none;
+    font-size: 40.75px;
+    max-width: 162px;
+    width: 112px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 36px;
+    padding: 0;
+    text-align: right;
+    color: #dcdbdb;
+}
+
+.currency-input::-webkit-input-placeholder {
+    color: #dcdbdb;
+}
+
+.input-sum label {
+    font-size: 27.17px;
+    color: #dcdbdb;
+    font-family: Gotham Rounded Book;
+}
+
+.inputed, .inputed::-webkit-input-placeholder {
+    color: #b2b2b2;
+}
+
+.button {
+    height: 64px;
+    background: #526e82;
+    display: inline-block;
+    position: relative;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.png);
+}
+
+.button.schedule::before {
+    background-position: 0 0;
+    width: 32px;
+    height: 30px;
+    top: 25px;
+    left: 35px;
+}
+
+.button.add::before {
+    background-position: -50px 0;
+    width: 27px;
+    height: 27px;
+    top: 18px;
+    left: 82px;
+}
+
+.button.widget::before {
+    background-position: -100px 0;
+    width: 31px;
+    height: 30px;
+    top: 16px;
+    right: 19px;
+}
+
+.button.schedule {
+    background: #ff8989;
+    width: 102px;
+}
+
+.footer.converter .button:hover {
+    background: #7191a8;
+}
+
+.button.schedule:hover {
+    background: #f58181;
+
+}
+
+.button.widget {
+    width: 69px;
+}
+
+.button.add {
+    width: 136px;
+}
+
+.footer.converter {
+    margin-top: -64px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.header-calendar {
+    height: 86px;
+    background: #526e82;
+    color: white;
+    font-size: 0px;
+}
+
+.header-calendar > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.date {
+    width: 223px;
+    text-align: center;
+    height: 100%;
+    padding-top: 14px;
+}
+
+.date-year {
+    font-family: Gotham Rounded Book;
+    font-size: 17.21px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.date-month {
+    font-family: Gotham Rounded Medium;
+    font-size: 18.11px;
+    display: block;
+}
+
+.header-calendar a {
+    height: 100%;
+    width: 42px;
+}
+
+.button.left::before {
+    background-position: -150px 0;;
+    width: 12px;
+    height: 23px;
+    top: 29px;
+    left: 15px;
+}
+
+.button.right::before {
+    background-position: -200px 0;
+    width: 12px;
+    height: 23px;
+    top: 29px;
+    right: 15px;
+}
+
+.calendar .button:hover {
+    background: #ff8989;
+}
+
+.calendar table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background: white;
+}
+
+.calendar thead {
+    background: #4cd9c0;
+    color: #3dad99;
+    font-family: Gotham Rounded Bold;
+    font-size: 17.21px;
+
+}
+
+.calendar thead td {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    width: 14.28%;
+}
+
+.calendar td {
+    padding-top: 12px;
+    padding-bottom: 10.5px;
+}
+
+.calendar tbody tr:first-child td {
+    padding-top: 16px;
+}
+
+.calendar tbody tr:last-child td {
+    padding-bottom: 15px;
+}
+
+.data__month {
+    font-family: Gotham Rounded Book;
+    font-size: 17.21px;
+    color: #9d9d9d;
+}
+
+.data__month.active {
+    background: #f58181;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.login {
+    background: white;
+    font-size: 0;
+}
+
+.login-input {
+    font-size: 20.36px;
+    color: #bebebe;
+    border: none;
+    width: 100%;
+    padding-left: 64px;
+}
+
+.login-input::-webkit-input-placeholder {
+    color: #dcdbdb;
+}
+
+.login-icon-input {
+    border-left: 4px solid white;
+    position: relative;
+}
+
+.login-icon-input:hover, .login-icon-input.active {
+    border-left: 4px solid #ff8989;
+}
+
+.login-input.user-email {
+    height: 73px;
+    line-height: 73px;
+}
+
+.login-input.user-possword {
+    height: 72px;
+    line-height: 71px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.sign-buttons {
+    height: 64px;
+}
+
+.sign-up:hover, .sign-in:hover {
+    background: #ff8989;
+}
+
+.sign-up, .sign-in {
+    font-size: 18.11px;
+    font-family: Gotham Rounded Bold;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    background: #526e82;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.sign-up {
+    width: 156px;
+    background: #7191a8;
+    color: #627d90;
+}
+
+.sign-in {
+    width: 151px;
+    color: white;
+}
+
+.login-icon-input::before {
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png);
+}
+
+.icon-email::before {
+    background-position: -300px 0;
+    width: 21px;
+    height: 23px;
+    top: 26px;
+    left: 22px;
+}
+
+.icon-possword::before {
+    background-position: -250px 0;
+    width: 18px;
+    height: 28px;
+    top: 22px;
+    left: 23px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.buttons {
+    height: 200px;
+    background: white;
+}
+
+.validate {
+    float: left;
+    width: 236px;
+    padding: 14px 8px 11px 12px;
+}
+
+.checks {
+    float: right;
+    width: 71px;
+    padding: 14px 10px 11px 8px;
+}
+
+.checks input[type=checkbox] {
+    visibility: hidden;
+}
+
+.input-validate {
+    font-size: 20.38px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding-left: 12px;
+    height: 51px;
+    width: 215px;
+    line-height: 51px;
+}
+
+.input-validate.valid::-webkit-input-placeholder {
+    color: #64dec9;
+}
+
+.input-validate.valid {
+    border-color: #4cd9c0;
+    color: #64dec9;
+}
+
+.input-validate.invalid::-webkit-input-placeholder {
+    color: #ffa0a0;
+}
+
+.input-validate.invalid {
+    border-color: #ff8989;
+    color: #ffa0a0;
+}
+
+.range {
+    -webkit-appearance: none;
+    margin: 32px auto;
+    width: 215px;
+    border-radius: 3px;
+    height: 8px;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            color-stop(0.7, #526e82),
+            color-stop(0.7, #99b5c9)
+    );
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #526e82;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    margin-left: 38px;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #526e82;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #99B5C9;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #526e82;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #526e82;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #99B5C9;
+}
+
+.squared {
+    width: 52px;
+    height: 52px;
+    position: relative;
+}
+
+.squared label {
+    cursor: pointer;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #ff8989;
+}
+
+.squared label:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    background: transparent;
+    top: 13px;
+    left: 13px;
+    border: 3px solid #dddddd;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.squared input[type=checkbox]:checked + label:after {
+    border-color: #4cd9c0;
+}
+
+.rounded {
+    width: 42px;
+    height: 42px;
+    background: white;
+    margin-top: 17px;
+    margin-left: 6px;
+    position: relative;
+}
+
+.rounded label {
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #dddddd;
+}
+
+.rounded label:after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background: #dddddd;
+}
+
+.rounded input[type=checkbox]:checked + label {
+    border-color: #4cd9c0;
+}
+
+.rounded input[type=checkbox]:checked + label:after {
+    background: #4cd9c0;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.header-mail {
+    height: 64px;
+    background: #4cd9c0;
+}
+
+.button.menu {
+    width: 75px;
+    float: left;
+    background: #41c0a9;
+}
+
+.button.menu:hover {
+    background: #526e82;
+}
+
+.add-user {
+    float: right;
+    width: 55px;
+    background: #4cd9c0;
+}
+
+.add-user:hover {
+    background: #41c0a9;
+}
+
+.button.menu::before {
+    background-position: -350px 0;
+    width: 36px;
+    height: 25px;
+    top: 17px;
+    left: 17px;
+}
+
+.add-user::before {
+    background-position: -400px 0;
+    width: 27px;
+    height: 27px;
+    top: 18px;
+    right: 14px;
+}
+
+.main-mail li {
+    background: white;
+    height: 84px;
+    border-top: 1px solid #e2e2e2;
+    padding-top: 15px;
+}
+
+.main-mail li:first-child {
+    height: 76px;
+    border-top: none;
+    padding-top: 11px;
+}
+
+.main-mail li:hover {
+    background: rgba(79, 233, 207, 0.15);
+}
+
+.user-img {
+    padding-left: 12px;
+    padding-right: 11px;
+    float: left;
+}
+
+.user-img:hover img {
+    box-shadow: #4cd9c0 0 0 0 1px;
+}
+
+.user-img img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.chat {
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.chat .user-name {
+    font-family: Gotham Rounded Medium;
+    font-size: 18.11px;
+    color: #bac2c7;
+    margin: 0;
+}
+
+.chat .message {
+    font-family: Gotham Rounded Book;
+    font-size: 13.58px;
+    color: #c8d2d9;
+    margin: 5px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.message.sent, .message.not-delivered {
+    padding-left: 22px;
+}
+
+.message.sent:before {
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.png);
+    background-position: -500px 0;
+    width: 14px;
+    height: 9px;
+    left: 0;
+    top: 4px;
+}
+
+.message.not-delivered:before {
+    position: absolute;
+    content: "";
+    background: url(../img/sprite.png);
+    background-position: -450px 0;
+    width: 9px;
+    height: 9px;
+    left: 0;
+    top: 4px;
+}
+
+.message.typing {
+    font-style: italic;
+}
+
+.status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 23px;
+    margin-right: 16px;
+}
+
+.main-mail li:first-child .status {
+    margin-top: 23px;
+}
+
+.status.green {
+    background: #4cd9c0;
+}
+
+.status.red {
+    background: #ec747d;
+}
+
+.status.sky {
+    background: #56e5f6;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.image-weather {
+
+    height: 248px;
+}
+
+.image-weather .window {
+    height: 248px;
+    width: 307px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image_reel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_reel a {
+    position: relative;
+}
+
+.image_reel img {
+    float: left;
+
+}
+
+.image_reel .weather-info {
+    position: absolute;
+    width: 235px;
+    bottom: 6px;
+    left: 12px;
+}
+
+.image_reel .weather-info p {
+    color: white;
+    font-family: Gotham Rounded Medium;
+    font-size: 16.75px;
+    margin: 0 0 2px 0;
+    z-index: 99;
+}
+
+.image_reel .weather-info .temperature {
+    font-family: Gotham Rounded Light;
+    font-size: 50px;
+    margin: 0 0 -5px -3px;
+}
+
+.image_reel .weather-info .temperature::after {
+    content: "°";
+    font-size: 25px;
+    vertical-align: 27px;
+}
+
+.paging {
+    position: absolute;
+    bottom: 7px;
+    right: 6px;
+    z-index: 100;
+}
+
+.paging a {
+    display: inline-block;
+    margin-right: 5px;
+    height: 7px;
+    width: 7px;
+    text-decoration: none;
+    background: #05aeb3;
+    border-radius: 50%;
+
+}
+
+.paging a.active {
+    background: #076164;
+}
+
+.button.celsius {
+    text-decoration: none;
+}
+
+.button.fahrenheit {
+    width: 79px;
+    background: #f58181;
+    text-decoration: none;
+}
+
+.button.fahrenheit::before, .button.celsius::before {
+    font-family: Gotham Rounded Book;
+    font-size: 40.75px;
+    top: 8px;
+    background: none;
+
+}
+
+.button.fahrenheit::before {
+    color: white;
+    content: "F";
+    left: 25px;
+}
+
+.button.celsius::before {
+    content: "C";
+    color: #dedede;
+    left: 24px;
+}
+
+.button.celsius, .button.add-weather {
+    width: 78px;
+    background: white;
+}
+
+.button.add-weather::before {
+    background-position: 0 -50px;
+    width: 27px;
+    height: 27px;
+    top: 17px;
+    right: 23px;
+}
+
+.button.weather-list {
+    width: 72px;
+    background: white;
+}
+
+.footer.weather .button:hover {
+    background: #41c0a9;
+}
+
+.button.weather-list::before {
+    background-position: -50px -50px;
+    width: 43px;
+    height: 25px;
+    top: 19px;
+    right: 15px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.wrapper.horizontal {
+    width: 728px;
+}
+
+.music {
+    height: 200px;
+    background: white;
+}
+
+.music-albom {
+    float: left;
+    width: 141px;
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+.play-track {
+    float: right;
+    width: 587px;
+    padding: 21px 13px 21px 23px;
+}
+
+.music-albom img {
+    height: 126px;
+    width: 126px;
+    margin-bottom: 9px;
+}
+
+.music-albom .follow {
+    font-family: "Gotham Rounded Bold";
+    font-size: 13.58px;
+    color: white;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 126px;
+    height: 40px;
+    padding-left: 45px;
+}
+
+.music-albom .follow:hover {
+    background: #ff8989;
+}
+
+.music-albom .follow:before {
+    background-position: -100px -50px;
+    width: 13px;
+    height: 13px;
+    top: 12px;
+    left: 18px;
+}
+
+.play-track .singer {
+    font-family: "Gotham Rounded Book";
+    font-size: 22.64px;
+    font-weight: bold;
+    color: #a8a8a8;
+    margin: 0;
+}
+
+.play-track .song {
+    font-family: "Gotham Rounded Book";
+    font-size: 22.64px;
+    color: #d6d6d6;
+    margin: 6px 0 18px;
+}
+
+.ranger div {
+    border-radius: 3px;
+    height: 9px;
+}
+
+.ranger p {
+    font-family: "Gotham Rounded Book";
+    color: #c6c6c6;
+    font-size: 15.85px;
+    margin: -5px 5px 0 0;
+}
+
+.ranger .length-track {
+    float: left;
+    background: #efefef;
+}
+
+.ranger .loading-track {
+    background: #bbfdf1;
+}
+
+.ranger .playing-track {
+    background: #4cd9c0;
+}
+
+.ranger p {
+    float: right;
+}
+.control{
+    margin-top: 27px;
+}
+
+.control a {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.control a:not(:first-child) {
+    height: 41px;
+    width: 41px;
+    background: white;
+    margin-right: 13px;
+}
+
+
+.control a:not(:first-child):hover::before {
+    background-color: white;
+    background-blend-mode: difference;
+}
+
+
+.control a:first-child {
+    height: 46px;
+    width: 46px;
+    background: #4cd9c0;
+    margin-left: -4px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.control a:first-child:hover {
+    background: #7191a8;
+}
+
+.control .play:before {
+    background-position: -150px -50px;
+    width: 13px;
+    height: 15px;
+    top: 16px;
+    left: 18px;
+}
+
+.control .previous:before {
+    background-position: -200px -50px;
+    width: 22px;
+    height: 17px;
+    top: 8px;
+    left: 3px;
+}
+
+.control .next:before {
+    background-position: -250px -50px;
+    width: 22px;
+    height: 17px;
+    top: 8px;
+    left: 0;
+}
+
+.control .shuffle:before {
+    background-position: -300px -50px;
+    width: 22px;
+    height: 18px;
+    top: 8px;
+    left: 5px;
+}
+
+.control .repeat:before {
+    background-position: -350px -50px;
+    width: 24px;
+    height: 17px;
+    top: 8px;
+    left: 23px;
+}
+
+
+.control .heart{
+    margin-left: 44px;
+}
+.control .heart:before {
+    background-position: -400px -50px;
+    width: 21px;
+    height: 18px;
+    top: 8px;
+    left: 0;
+}
+
+
+.control .button.add::before {
+    background-position: -450px -50px;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 20px;
+}
+
+
+
+.control .share:before {
+    background-position: -500px -50px;
+    width: 21px;
+    height: 18px;
+    top: 8px;
+    left: 44px;
+}
